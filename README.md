@@ -136,3 +136,10 @@ dotnet package list --include-transitive
 Тесты запускаются через `ctest` и проверяют PNG, D2, три корневых пакета,
 порядок, цикл и ошибки параметров. Сгенерированные файлы и настройки редактора
 исключены из Git через `.gitignore`.
+
+Стиль Python-теста можно проверить отдельно установленными инструментами:
+
+```sh
+python3 -m pycodestyle --max-line-length=80 tests/mock_nuget.py
+python3 -m radon cc -s tests/mock_nuget.py
+```
