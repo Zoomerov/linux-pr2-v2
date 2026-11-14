@@ -1,0 +1,11 @@
+.idea/
+.build/
+build/
+cmake-build-*/
+outputs/
+*.exe
+*.o
+*.obj
+*.png
+*.svg
+*.dot.tmp

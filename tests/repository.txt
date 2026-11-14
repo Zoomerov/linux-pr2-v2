@@ -1,0 +1,8 @@
+# A diamond-shaped dependency graph plus a disconnected package.
+A: B C
+B: D
+C: D
+D:
+E: F
+F: E
+G:
